@@ -8,4 +8,10 @@ public class Division {
         m_id = name.hashCode();
         m_name = name;
     }
+    public Integer getId() {
+        return m_id;
+    }
+    public String getName() {
+        return m_name;
+    }
 }

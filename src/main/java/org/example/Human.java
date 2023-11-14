@@ -23,4 +23,24 @@ public class Human {
         m_salary = salary;
         m_dateOfBirth = dateOfBirth;
     }
+
+    public Integer getId() {
+        return m_id;
+    }
+    public String getName() {
+        return m_name;
+    }
+    public String getGender()  {
+        return m_sex;
+    }
+
+    public Integer getSalary() {
+        return m_salary;
+    }
+    public Division getDivision() {
+        return m_division;
+    }
+    public LocalDate getDateOfBirth() {
+        return m_dateOfBirth;
+    }
 }
