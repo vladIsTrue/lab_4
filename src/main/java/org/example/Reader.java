@@ -14,11 +14,12 @@ import java.time.format.DateTimeFormatter;
 import java.util.*;
 
 public class Reader {
+    private static char separator = ';';
     public static List<Human> getListHumansFromCSV(String csvFilePath) {
         try (InputStream in = Reader.class.getClassLoader().getResourceAsStream(csvFilePath);
              CSVReader reader = (in == null) ? null : new CSVReaderBuilder(new InputStreamReader(in))
                      .withCSVParser(new CSVParserBuilder()
-                             .withSeparator(';')
+                             .withSeparator(separator)
                              .build())
                      .build();
         ) {
