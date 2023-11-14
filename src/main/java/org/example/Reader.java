@@ -36,7 +36,7 @@ public class Reader {
         var division = createDivision(data);
 
         Integer id = null, salary = null;
-        String name = "", sex = "";
+        String name = null, sex = null;
         LocalDate dateOfBirth = null;
 
         for(var item : data) {
